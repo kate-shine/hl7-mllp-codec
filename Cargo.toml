@@ -15,18 +15,16 @@ include = [
     "Cargo.toml",
 ]
 
-# [profile.release]
-# debug = true # Flamegraph love
-
 [dependencies]
-bytes = "0.5"
-tokio-util = {version="0.3", features=["codec"]}
-log = "0.4"
+bytes = "1.0.1"
+tokio-util = {version="0.6", features=["codec"]}
+log = "0.4.14"
+
 
 [dev-dependencies]
-criterion = "0.3"
-futures = "0.3"
-tokio = {version="0.2", features=["full"]}
+criterion = "0.3.4"
+futures = "0.3.13"
+tokio = {version="1.2.0", features=["full"]}
 
 [[bench]]
 name = "benchmarks"
